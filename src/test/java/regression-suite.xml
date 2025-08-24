@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+    <test name="RegressionTests">
+        <classes>
+            <!-- Aquí van todos los tests, incluyendo negativos -->
+            <class name="tests.BookingTests"/>
+            <class name="tests.BookingNegativeTests"/>
+            <class name="tests.NuevaHabitacionTests"/>
+        </classes>
+    </test>
+</suite>
