@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 
 public class DeleteBookingTests extends BaseApiTest {
 
+
+    //DELETE requiere un bookingId real que solo la API puede generar.va a fallar
     @Test
     public void deleteBookingTest() {
         int bookingId = 12345; // ID SOS Y.Y

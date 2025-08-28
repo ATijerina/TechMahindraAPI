@@ -8,9 +8,7 @@ import static io.restassured.RestAssured.given;
 
 public class AuthClient {
 
-    /**
-     * Login con usuario y contraseña
-     */
+    //Login
     public Response login(String username, String password) {
         return given()
 

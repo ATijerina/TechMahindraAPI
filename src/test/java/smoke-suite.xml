@@ -2,7 +2,7 @@
 <suite name="SmokeSuite">
     <test name="SmokeTests">
         <classes>
-            <!-- Aquí van los tests que quieras correr rápido (smoke) -->
+            <!--  (smoke) -->
             <class name="tests.BookingTests"/>
             <class name="tests.NuevaHabitacionTests"/>
         </classes>

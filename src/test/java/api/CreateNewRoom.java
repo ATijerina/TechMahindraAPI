@@ -18,7 +18,7 @@ public class CreateNewRoom {
     }
 
 
-    // Método para obtener todas las habitaciones
+    // Metodo para traer todas las habitaciones
     public Response getAllRooms(RequestSpecification requestSpec, String token) {
         return given()
                 .spec(requestSpec)

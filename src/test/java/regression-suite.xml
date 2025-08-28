@@ -3,9 +3,12 @@
     <test name="RegressionTests">
         <classes>
             <!-- Aquí van todos los tests, incluyendo negativos -->
+            <class name="tests.AuthTests"/>
             <class name="tests.BookingTests"/>
-            <class name="tests.BookingNegativeTests"/>
             <class name="tests.NuevaHabitacionTests"/>
+            <class name="tests.RetrieveAllRoomsTests"/>
+            <class name="tests.BookingNegativeTests"/>
+
         </classes>
     </test>
 </suite>

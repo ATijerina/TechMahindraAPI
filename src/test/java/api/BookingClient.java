@@ -9,9 +9,7 @@ import static io.restassured.RestAssured.given;
 
 public class BookingClient {
 
-    /**
-     * Crear reserva
-     */
+    //Crear reserva
     public Response createBooking(Map<String, Object> bookingData, String token) {
         return given()
                 .header("Content-Type", "application/json")
@@ -23,9 +21,7 @@ public class BookingClient {
                 .extract().response();
     }
 
-    /**
-     * Obtener todas las reservas (admin)
-     */
+    //obtener las reservas (admin)
     public Response getAllBookings(String token) {
         return given()
                 .header("Cookie", "token=" + token)
@@ -35,17 +31,6 @@ public class BookingClient {
                 .extract().response();
     }
 
-    /**
-     * Obtener reserva por ID
-     */
-    public Response getBookingById(int bookingId, String token) {
-        return given()
-                .header("Cookie", "token=" + token)
-                .when()
-                .get(EndpointUtils.BOOKINGS + "/" + bookingId)
-                .then()
-                .extract().response();
-    }
 
 
         // Obtener booking por ID
@@ -59,7 +44,7 @@ public class BookingClient {
         }
 
 
-        // Método para eliminar booking por ID
+        // Metodo para eliminar por ID (El cual no lo envia el request)
         public Response deleteBooking(String token, int bookingId) {
             return given()
                     .header("Cookie", "token=" + token)
