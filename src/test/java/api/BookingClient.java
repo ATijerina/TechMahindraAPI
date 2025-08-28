@@ -38,7 +38,7 @@ public class BookingClient {
             return given()
                     .header("Cookie", "token=" + token)
                     .when()
-                    .get("/booking/" + bookingId) // Path parameter
+                    .get("/"+EndpointUtils.BOOKINGS+"/" + bookingId) // Path parameter
                     .then()
                     .extract().response();
         }

@@ -17,7 +17,7 @@ public class AuthClient {
                 .header("Content-Type","application/json")
                 .body("{\"username\":\"" + username + "\", \"password\":\"" + password + "\"}")
                 .when()
-                .post("auth/login")
+                .post(EndpointUtils.LOGIN)
                 .then()
                 .extract().response();
 
